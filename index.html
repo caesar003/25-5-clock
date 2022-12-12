@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>25+5 Clock</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>25 + 5 Clock</h1>
+            <div id="configs">
+                <div class="config">
+                    <p id="break-label" class="label">Break Length</p>
+                    <div class="config-time-wrapper">
+                        <div id="break-length" class="controller-time"></div>
+                        <div class="button-controls">
+                            <button
+                                id="break-decrement"
+                                class="adjust-time"
+                                data-target="break"
+                                data-direction="down"
+                            >
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                            <button
+                                id="break-increment"
+                                class="adjust-time"
+                                data-target="break"
+                                data-direction="up"
+                            >
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="config">
+                    <p id="session-label" class="label">Session Length</p>
+
+                    <div class="config-time-wrapper">
+                        <div id="session-length" class="controller-time"></div>
+                        <div class="button-controls">
+                            <button
+                                id="session-decrement"
+                                class="adjust-time"
+                                data-target="session"
+                                data-direction="down"
+                            >
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                            <button
+                                id="session-increment"
+                                class="adjust-time"
+                                data-target="session"
+                                data-direction="up"
+                            >
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="clock">
+                <div id="timer-label"></div>
+                <div id="time-left"></div>
+            </div>
+            <div id="timer-control">
+                <button id="start_stop">
+                    <i class="fas fa-play"></i><i class="fas fa-pause"></i>
+                </button>
+                <button id="reset">
+                    <i class="fas fa-refresh"></i>
+                </button>
+            </div>
+        </main>
+        <audio id="beep">
+            <source src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav" type="audio/wav">
+        </audio>
+        <script src="./script.js"></script>
+    </body>
+</html>

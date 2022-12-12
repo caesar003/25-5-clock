@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "DS-DIGI";
+    src: url(https://caesar003.github.io/calculator/fonts/DS-DIGI.TTF)
+        format("truetype");
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+main {
+    width: 420px;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+}
+
+#configs {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.config {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.config-time-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.controller-time {
+    font-size: 1.5rem;
+}
+
+#clock {
+    text-align: center;
+}
+#timer-label {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#time-left {
+    font-size: 5rem;
+    font-family: "DS-DIGI";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+#time-left.last-minute {
+    color: #DE3163;
+}
+#timer-control {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.7;
+    text-shadow: none;
+}
+
